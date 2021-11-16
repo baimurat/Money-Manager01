@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #568EA6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ExpenseRecordingController">
+    <children>
+        <ImageView fitHeight="102.0" fitWidth="104.0" layoutX="496.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/logo.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="64.0" layoutY="56.0" text="EXPENSE RECORD" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold" size="40.0" />
+            </font>
+        </Label>
+        <TextField fx:id="descriptionOfExpense" layoutX="73.0" layoutY="201.0" prefHeight="25.0" prefWidth="454.0" promptText="describe your expense" style="-fx-background-radius: 25;">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+      <TextField fx:id="expenseTF" layoutX="73.0" layoutY="268.0" prefHeight="25.0" prefWidth="454.0" promptText="enter your expense" style="-fx-background-radius: 25;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+        <Button fx:id="saveButton" layoutX="58.0" layoutY="430.0" mnemonicParsing="false" onAction="#saveButtonPressed" prefHeight="30.0" prefWidth="138.0" text="Save">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+        <Button fx:id="exitButton" layoutX="417.0" layoutY="430.0" mnemonicParsing="false" onAction="#cancelButtonPressed" prefHeight="30.0" prefWidth="138.0" text="Cancel">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
